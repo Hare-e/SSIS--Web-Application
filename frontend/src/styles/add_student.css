@@ -1,0 +1,128 @@
+/* Remove harsh shadows */
+.shadow-lg {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Card polishing */
+.card {
+    --bs-card-border-width: 1px;
+    --bs-card-border-color: rgba(255, 255, 255, 0.15);
+    --bs-card-bg: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem !important;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Typography */
+.fw-bold, 
+.form-label, 
+.form-check-label {
+    color: #f3f4f6 !important;
+    letter-spacing: 0.3px;
+}
+
+/* Divider */
+hr {
+    margin: 1.2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Inputs smoother styling */
+.form-control,
+.form-select {
+    width: 100%;
+    padding: .55rem .75rem;
+    font-size: 1rem;
+    color: #f9fafb;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+/* Hover + Focus */
+.form-control:hover,
+.form-select:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 .25rem rgba(59, 130, 246, 0.3);
+    outline: none;
+}
+
+/* Select dropdown */
+.form-select option {
+    background-color: #111827 !important;
+    color: #f9fafb !important;
+}
+
+/* Radio buttons */
+.form-check-input {
+    background-color: transparent;
+    border: 2px solid #9ca3af;
+}
+
+.form-check-input:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.55rem 1.2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.2s ease;
+}
+
+.btn-success {
+    background-color: #B8892B;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #16a34a;
+}
+
+.btn-warning {
+    background-color: #eab308;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #ca8a04;
+}
+
+.btn-secondary {
+    background-color: #6b7280;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+}
+
+/* Message alert */
+.alert-info {
+    background: rgba(59, 130, 246, 0.15) !important;
+    border-left: 4px solid #3b82f6 !important;
+    color: #dbeafe !important;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+}
+
+.page-bg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #7a1f1f, #3d0b0b);
+}
