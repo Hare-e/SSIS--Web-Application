@@ -66,10 +66,11 @@ Backend expects a `.env` file in the backend project root with the following val
 ```env
 DB_HOST=localhost
 DB_NAME=student_system
-DB_USER=postgres
-DB_PASSWORD=password321
+DB_USER=bd_user_name
+DB_PASSWORD=bd_password
 DB_PORT=5432
-
+JWT_SECRET_KEY=some_long_secret_here
+FRONT_ORIGIN=http://127.0.0.1:3000
 
 Frontend expects a `.env` file in the backend project root with the following values:
 
